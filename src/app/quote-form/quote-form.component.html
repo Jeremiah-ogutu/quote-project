@@ -8,14 +8,14 @@
           <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required>
           <!-- Display{{newQuote.name}} -->
           <div [hidden]="name.valid|| name.pristine" class="alert alert-danger">
-          <p>Name is required</p>
+          <p>Quote is required</p>
           </div>
 
       </div>
       <br>
       <div class="form-group">
 
-        <label for="name">author</label>
+        <label for="name">Author</label>
         <input type="text" required class="form-control" id="Author">
         <div [hidden]="name.valid|| name.pristine" class="alert alert-danger">
             <p>Author is required</p>
@@ -24,12 +24,17 @@
     </div>
     <br>
       <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" required class="form-control" id="Author">
+        <div [hidden]="name.valid|| name.pristine" class="alert alert-danger">
+            <p>name is required</p>
+            </div>
 
-          <label for="quote">Name</label>
+          <!-- <label for="quote">Name</label>
           <textarea class="form-control" id="quote" rows="4" required [(ngModel)]="newQuote.quote" name="quote" #quote="ngModel" required></textarea>
           <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
               <p>Quote is required</p>
-          </div>
+          </div> -->
 
       </div> 
       <!-- <div class="form-group">
@@ -40,6 +45,6 @@
           </div> -->
 
       <!-- </div>  -->
-      <button type="submit" class="btn btn-success">Add Quote</button>
+      <button type="submit" class="btn btn-success" style="font-size: 25px; background-color: greenyellow; " >Add Quote</button>
   </form>
 </div>
