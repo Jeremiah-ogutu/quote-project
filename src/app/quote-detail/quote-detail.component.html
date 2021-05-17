@@ -1,0 +1,21 @@
+<!-- <p>{{quote.description}}</p> -->
+<div>
+<h5>Quote:{{quote.name}}</h5>
+<h5>Author:{{quote.quote}}</h5>
+<h5>Name:{{quote.writter}}</h5>
+</div>
+
+  
+
+<!-- <p>
+  Upvotes:{{quote.upvotes}}
+</p>
+<p>
+  Downvotes:{{quote.Downvotes}}
+</p> -->
+<p>{{quote.upvote}}</p>
+ <button (click)='upvote()'>Upvote</button>
+ <p>{{quote.downvote}}</p> 
+ <button (click)='downvote()'>Downvote</button>  
+
+<button (click)='quotecomplete(true)'>complete</button>
