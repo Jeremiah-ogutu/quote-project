@@ -3,13 +3,15 @@
   <hr>
   <ul>
     <li *ngFor='let quote of quotes;let i = index'>
-      <!-- <p appHighlight *ngIf="highestupvote()===quote.upvote && quote.upvote>0">{{quote.quote}}</p>
-      <p  *ngIf="highestupvote()!==quote.upvote || quote.upvote===0">{{quote.quote}}</p> -->
+
+      <p appHighlight *ngIf="highestupvote()===quote.upvote && quote.upvote>0">{{quote.quote}}</p>
+      <p  *ngIf="highestupvote()!==quote.upvote || quote.upvote===0">{{quote.quote}}</p>
       
       <app-quote-detail *ngIf='quote.showDescription'  [quote]='quote'(isComplete)='completeQuote($event,i)'></app-quote-detail>
       <!-- <p><i class="fa fa-thumbs-up" style="font-size: 40px; color:blue;" aria-hidden="true"></i></p>
       <p><i class="fa fa-thumbs-down" style="font-size: 40px; color : blue;" aria-hidden="true"></i></p> -->
     </li>
+    <!-- <li>{{quote.name}} due on {{quotes.completeDate|date|uppercase}}</li>  -->
   </ul>
   <div class="col-md-6">
     <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
@@ -23,7 +25,7 @@
  <p>{{quote.downvote}}</p> 
  <button (click)='downvote()'>Downvote</button>   -->
  <!-- <app-goal-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'completeGoal($event,i)'></app-quote-detail> -->
-  <app-quote-form></app-quote-form>
+  <!-- <app-quote-form></app-quote-form> -->
   
 </div>
 

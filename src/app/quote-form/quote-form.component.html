@@ -6,7 +6,6 @@
 
           <label for="name">Quote</label>
           <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required>
-          <!-- Display{{newQuote.name}} -->
           <div [hidden]="name.valid|| name.pristine" class="alert alert-danger">
           <p>Quote is required</p>
           </div>
@@ -14,6 +13,11 @@
       </div>
       <br>
       <div class="form-group">
+           <!-- <label for="name">Quote</label>
+          <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required>
+          <div [hidden]="name.valid|| name.pristine" class="alert alert-danger">
+          <p>Quote is required</p>
+          </div> -->
 
         <label for="name">Author</label>
         <input type="text" required class="form-control" id="Author">
@@ -24,17 +28,17 @@
     </div>
     <br>
       <div class="form-group">
-        <label for="name">Name</label>
+        <!-- <label for="name">Name</label>
         <input type="text" required class="form-control" id="Author">
         <div [hidden]="name.valid|| name.pristine" class="alert alert-danger">
             <p>name is required</p>
-            </div>
+            </div> -->
 
-          <!-- <label for="quote">Name</label>
-          <textarea class="form-control" id="quote" rows="4" required [(ngModel)]="newQuote.quote" name="quote" #quote="ngModel" required></textarea>
-          <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+          <label for="quote">Name</label>
+          <textarea class="form-control" id="quote" rows="4" required [(ngModel)]="newQuote.quote" name="name" #quote="ngModel" required></textarea>
+          <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
               <p>Quote is required</p>
-          </div> -->
+          </div>
 
       </div> 
       <!-- <div class="form-group">
@@ -45,6 +49,6 @@
           </div> -->
 
       <!-- </div>  -->
-      <button type="submit" class="btn btn-success" style="font-size: 25px; background-color: greenyellow; " >Add Quote</button>
+      <button type="submit" class="btn btn-success" style="font-size: 25px; background-color: greenyellow; " >ADD QUOTE</button>
   </form>
 </div>
