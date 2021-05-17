@@ -1,8 +1,10 @@
 <div>
-  <h1>My Quote</h1>
+  <h1>My Swahili Quotes</h1>
   <hr>
   <ul>
     <li *ngFor='let quote of quotes;let i = index'>
+      <!-- <p appHighlight *ngIf="highestupvote()===quote.upvote && quote.upvote>0">{{quote.quote}}</p>
+      <p  *ngIf="highestupvote()!==quote.upvote || quote.upvote===0">{{quote.quote}}</p> -->
       
       <app-quote-detail *ngIf='quote.showDescription'  [quote]='quote'(isComplete)='completeQuote($event,i)'></app-quote-detail>
       <!-- <p><i class="fa fa-thumbs-up" style="font-size: 40px; color:blue;" aria-hidden="true"></i></p>
