@@ -32,6 +32,7 @@ new Quote("Daima nguruwe hawi mwenyekiti katika kamati ya usafi","Mwana wa babu"
   }
   completeQuote(isComplete: any,index: number){
     if(isComplete){
+      let toDelete =confirm('~Are you sure you want to delete')
       this.quotes.splice(index,1);
     }
   }
