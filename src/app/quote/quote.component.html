@@ -1,9 +1,9 @@
-<div>
+<div class="bk">
   <h1 style="text-align: center; color:blue; font-family: 'Times New Roman', Times, serif;  font-size: 70px;" >My Swahili Quotes</h1>
   <hr>
   <div class="row" >
     <div class="col-md-6" > 
-      <ul>
+      <ul class="testing">
       <li *ngFor='let quote of quotes;let i = index'>
   
         <p appHighlight *ngIf="highestupvote()===quote.upvote && quote.upvote>0">{{quote.quote}}</p>
