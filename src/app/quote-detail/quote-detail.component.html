@@ -1,8 +1,8 @@
 
 <div>
-<h5>Quote:{{quote.name}}</h5>
-<h5>Author:{{quote.quote}}</h5>
-<h5>Name:{{quote.writter}}</h5>
+<h5 style="font-family: 'Times New Roman', Times, serif;"  > <b>Quote:{{quote.name}}</b> </h5>
+<h5 style="font-family: 'Times New Roman', Times, serif;" >Author:{{quote.quote}}</h5>
+<h5 style="font-family: 'Times New Roman', Times, serif;" >Name:{{quote.writter}}</h5>
 </div>
 
   
@@ -14,8 +14,8 @@
   Downvotes:{{quote.Downvotes}}
 </p> -->
 <p>{{quote.upvote}}</p>
- <button (click)='upvote()' style="color: white; font-size: 20px; background-color: forestgreen; ">Upvote</button>
+ <button (click)='upvote()' style="color: white; font-size: 20px; background-color: blue;  font-size: 25px; font-family: 'Times New Roman', Times, serif; ">Upvote</button>
  <p>{{quote.downvote}}</p> 
- <button (click)='downvote()' style="color: white; font-size: 20px; background-color: rgb(0, 89, 255); " >Downvote</button>  
+ <button (click)='downvote()' style="color: white; font-size: 20px; background-color: rgb(187, 183, 183);  font-size: 25px; font-family: 'Times New Roman', Times, serif;" >Downvote</button>  
 
-<button (click)='quotecomplete(true)' style="color: white; font-size: 20px;  background-color: red; "   >delete</button>
+<button (click)='quotecomplete(true)' style="color: white; font-size: 20px;  background-color:red;  font-size: 25px; font-family: 'Times New Roman', Times, serif;"   >delete</button>
